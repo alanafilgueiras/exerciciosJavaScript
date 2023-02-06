@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guardar uma variável</title>
+</head>
+<body>
+    <h2>3-Vamos armazenar uma variável da seguinte forma: </h2>
+        <p>- exibir um alert perguntando o nome do usuário;</p>
+        <p>- imprimir o nome que foi digitado mais uma msg de boas vindas</p>
+    </h2>
+    <h2>Exercício resolvido:</h2>    
+    <button id="btn-inicio" onclick="inicio()">clique para começar</button>
+    <script>
+        function inicio(){
+            let nome = prompt("Digite seu nome")
+            window.alert(`Olá, ${nome} , seja bem-vindo(a)`)
+        }
+        
+    </script>
+</body>
+</html>

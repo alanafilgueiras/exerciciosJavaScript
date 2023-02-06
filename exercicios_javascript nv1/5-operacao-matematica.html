@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operação matemática</title>
+</head>
+<body>
+    <h2>Declarando variável e executando uma operação matemática</h2>
+    <p>- Faça com que o usuário digite um número</p>
+    <p>- Desse número informe o dobro e a metade dele</p>
+    <h2>Exercicio Resolvido:</h2>
+    
+    <section id="res">
+        <h3>Vamos lá!</h3> 
+    </section>
+    <button id="btn-calcular" onclick="calcular()">clique para para digitar o número</button>
+    <script>
+        function calcular(){
+            let n1 = Number(window.prompt("Digite um número: "));
+            let res = document.querySelector('section#res');
+            let dobro = n1*2
+            res.innerHTML = `<p>O número digitado foi ${n1}. O dobro dele é ${dobro} e sua metade é ${n1 /2}</p>`
+
+        }
+    </script>
+
+</body>
+</html>
